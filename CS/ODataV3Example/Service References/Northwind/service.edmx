@@ -1,0 +1,183 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices m:DataServiceVersion="3.0" m:MaxDataServiceVersion="3.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <Schema Namespace="Northwind" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityType Name="Customers">
+        <Key>
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="Address" Type="Edm.String" />
+        <Property Name="City" Type="Edm.String" />
+        <Property Name="CompanyName" Type="Edm.String" />
+        <Property Name="ContactName" Type="Edm.String" />
+        <Property Name="ContactTitle" Type="Edm.String" />
+        <Property Name="Country" Type="Edm.String" />
+        <Property Name="CustomerID" Type="Edm.String" Nullable="false" />
+        <Property Name="Fax" Type="Edm.String" />
+        <Property Name="Phone" Type="Edm.String" />
+        <Property Name="PostalCode" Type="Edm.String" />
+        <Property Name="Region" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="Products">
+        <Key>
+          <PropertyRef Name="ProductID" />
+        </Key>
+        <Property Name="Discontinued" Type="Edm.Boolean" />
+        <Property Name="EAN13" Type="Edm.String" />
+        <Property Name="ProductID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ProductName" Type="Edm.String" />
+        <Property Name="QuantityPerUnit" Type="Edm.String" />
+        <Property Name="ReorderLevel" Type="Edm.Int16" />
+        <Property Name="UnitPrice" Type="Edm.Decimal" />
+        <Property Name="UnitsInStock" Type="Edm.Int16" />
+        <Property Name="UnitsOnOrder" Type="Edm.Int16" />
+        <Property Name="ExtendedPrice" Type="Edm.Decimal" />
+        <NavigationProperty Name="CategoryID" Relationship="Northwind.Products_CategoryID" ToRole="CategoryID" FromRole="Products" />
+        <NavigationProperty Name="SupplierID" Relationship="Northwind.Products_SupplierID" ToRole="SupplierID" FromRole="Products" />
+      </EntityType>
+      <EntityType Name="Categories">
+        <Key>
+          <PropertyRef Name="CategoryID" />
+        </Key>
+        <Property Name="CategoryID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CategoryName" Type="Edm.String" />
+        <Property Name="Description" Type="Edm.String" />
+        <Property Name="StreamPicture" Type="Edm.Stream" Nullable="false" />
+      </EntityType>
+      <EntityType Name="Employees">
+        <Key>
+          <PropertyRef Name="EmployeeID" />
+        </Key>
+        <Property Name="Address" Type="Edm.String" />
+        <Property Name="BirthDate" Type="Edm.DateTime" />
+        <Property Name="City" Type="Edm.String" />
+        <Property Name="Country" Type="Edm.String" />
+        <Property Name="EmployeeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Extension" Type="Edm.String" />
+        <Property Name="FirstName" Type="Edm.String" />
+        <Property Name="HireDate" Type="Edm.DateTime" />
+        <Property Name="HomePhone" Type="Edm.String" />
+        <Property Name="LastName" Type="Edm.String" />
+        <Property Name="Notes" Type="Edm.String" />
+        <Property Name="Photo" Type="Edm.Stream" Nullable="false" />
+        <Property Name="PostalCode" Type="Edm.String" />
+        <Property Name="Region" Type="Edm.String" />
+        <Property Name="ReportsTo" Type="Edm.Int32" />
+        <Property Name="Title" Type="Edm.String" />
+        <Property Name="TitleOfCourtesy" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="Shippers">
+        <Key>
+          <PropertyRef Name="ShipperID" />
+        </Key>
+        <Property Name="CompanyName" Type="Edm.String" />
+        <Property Name="Phone" Type="Edm.String" />
+        <Property Name="ShipperID" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+      <EntityType Name="Orders">
+        <Key>
+          <PropertyRef Name="OrderID" />
+        </Key>
+        <Property Name="Freight" Type="Edm.Decimal" />
+        <Property Name="OrderDate" Type="Edm.DateTime" />
+        <Property Name="OrderID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="RequiredDate" Type="Edm.DateTime" />
+        <Property Name="ShipAddress" Type="Edm.String" />
+        <Property Name="ShipCity" Type="Edm.String" />
+        <Property Name="ShipCountry" Type="Edm.String" />
+        <Property Name="ShipName" Type="Edm.String" />
+        <Property Name="ShippedDate" Type="Edm.DateTime" />
+        <Property Name="ShipPostalCode" Type="Edm.String" />
+        <Property Name="ShipRegion" Type="Edm.String" />
+        <NavigationProperty Name="CustomerID" Relationship="Northwind.Orders_CustomerID" ToRole="CustomerID" FromRole="Orders" />
+        <NavigationProperty Name="EmployeeID" Relationship="Northwind.Orders_EmployeeID" ToRole="EmployeeID" FromRole="Orders" />
+        <NavigationProperty Name="ShipVia" Relationship="Northwind.Orders_ShipVia" ToRole="ShipVia" FromRole="Orders" />
+      </EntityType>
+      <EntityType Name="Suppliers">
+        <Key>
+          <PropertyRef Name="SupplierID" />
+        </Key>
+        <Property Name="Address" Type="Edm.String" />
+        <Property Name="City" Type="Edm.String" />
+        <Property Name="CompanyName" Type="Edm.String" />
+        <Property Name="ContactName" Type="Edm.String" />
+        <Property Name="ContactTitle" Type="Edm.String" />
+        <Property Name="Country" Type="Edm.String" />
+        <Property Name="Fax" Type="Edm.String" />
+        <Property Name="HomePage" Type="Edm.String" />
+        <Property Name="Phone" Type="Edm.String" />
+        <Property Name="PostalCode" Type="Edm.String" />
+        <Property Name="Region" Type="Edm.String" />
+        <Property Name="SupplierID" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Products" Relationship="Northwind.Suppliers_Products" ToRole="Products" FromRole="Suppliers" />
+      </EntityType>
+      <Association Name="Products_CategoryID">
+        <End Type="Northwind.Products" Role="Products" Multiplicity="*" />
+        <End Type="Northwind.Categories" Role="CategoryID" Multiplicity="0..1" />
+      </Association>
+      <Association Name="Products_SupplierID">
+        <End Type="Northwind.Suppliers" Role="SupplierID" Multiplicity="0..1" />
+        <End Type="Northwind.Products" Role="Products" Multiplicity="*" />
+      </Association>
+      <Association Name="Orders_CustomerID">
+        <End Type="Northwind.Orders" Role="Orders" Multiplicity="*" />
+        <End Type="Northwind.Customers" Role="CustomerID" Multiplicity="0..1" />
+      </Association>
+      <Association Name="Orders_EmployeeID">
+        <End Type="Northwind.Orders" Role="Orders" Multiplicity="*" />
+        <End Type="Northwind.Employees" Role="EmployeeID" Multiplicity="0..1" />
+      </Association>
+      <Association Name="Orders_ShipVia">
+        <End Type="Northwind.Shippers" Role="ShipVia" Multiplicity="0..1" />
+        <End Type="Northwind.Orders" Role="Orders" Multiplicity="*" />
+      </Association>
+      <Association Name="Suppliers_Products">
+        <End Type="Northwind.Suppliers" Role="Suppliers" Multiplicity="*" />
+        <End Type="Northwind.Products" Role="Products" Multiplicity="*" />
+      </Association>
+      <EntityContainer Name="XpoExampleContext" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="Customers" EntityType="Northwind.Customers" />
+        <EntitySet Name="Products" EntityType="Northwind.Products" />
+        <EntitySet Name="Categories" EntityType="Northwind.Categories" />
+        <EntitySet Name="Employees" EntityType="Northwind.Employees" />
+        <EntitySet Name="Shippers" EntityType="Northwind.Shippers" />
+        <EntitySet Name="Orders" EntityType="Northwind.Orders" />
+        <EntitySet Name="Suppliers" EntityType="Northwind.Suppliers" />
+        <FunctionImport Name="GetAuthorizationCookie" ReturnType="Edm.String" m:HttpMethod="GET">
+          <Parameter Name="name" Type="Edm.String" />
+          <Parameter Name="password" Type="Edm.String" />
+        </FunctionImport>
+        <FunctionImport Name="SetCategoriesFiltering" m:HttpMethod="GET">
+          <Parameter Name="state" Type="Edm.Boolean" Nullable="false" />
+        </FunctionImport>
+        <FunctionImport Name="CanSupplied" IsBindable="true" m:IsAlwaysBindable="true">
+          <Parameter Name="supplier" Type="Northwind.Suppliers" />
+          <Parameter Name="productName" Type="Edm.String" />
+        </FunctionImport>
+        <AssociationSet Name="Products_CategoryID_Categories" Association="Northwind.Products_CategoryID">
+          <End Role="Products" EntitySet="Products" />
+          <End Role="CategoryID" EntitySet="Categories" />
+        </AssociationSet>
+        <AssociationSet Name="Products_SupplierID_Suppliers" Association="Northwind.Products_SupplierID">
+          <End Role="Products" EntitySet="Products" />
+          <End Role="SupplierID" EntitySet="Suppliers" />
+        </AssociationSet>
+        <AssociationSet Name="Orders_CustomerID_Customers" Association="Northwind.Orders_CustomerID">
+          <End Role="Orders" EntitySet="Orders" />
+          <End Role="CustomerID" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="Orders_EmployeeID_Employees" Association="Northwind.Orders_EmployeeID">
+          <End Role="Orders" EntitySet="Orders" />
+          <End Role="EmployeeID" EntitySet="Employees" />
+        </AssociationSet>
+        <AssociationSet Name="Orders_ShipVia_Shippers" Association="Northwind.Orders_ShipVia">
+          <End Role="Orders" EntitySet="Orders" />
+          <End Role="ShipVia" EntitySet="Shippers" />
+        </AssociationSet>
+        <AssociationSet Name="Suppliers_Products_Products" Association="Northwind.Suppliers_Products">
+          <End Role="Suppliers" EntitySet="Suppliers" />
+          <End Role="Products" EntitySet="Products" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
