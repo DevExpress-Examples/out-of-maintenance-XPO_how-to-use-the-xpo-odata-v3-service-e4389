@@ -35,9 +35,9 @@
             Me.gvlODataV3Service = New DevExpress.XtraGrid.Views.Grid.GridView()
             Me.panel1.SuspendLayout()
             Me.categoryInteceptor.SuspendLayout()
-            DirectCast(Me.pictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.gclODataV3ServiceMain, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.gvlODataV3Service, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.pictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.gclODataV3ServiceMain, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.gvlODataV3Service, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' panel1
@@ -162,9 +162,9 @@
             Me.panel1.ResumeLayout(False)
             Me.categoryInteceptor.ResumeLayout(False)
             Me.categoryInteceptor.PerformLayout()
-            DirectCast(Me.pictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.gclODataV3ServiceMain, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.gvlODataV3Service, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.pictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.gclODataV3ServiceMain, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.gvlODataV3Service, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub

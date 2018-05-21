@@ -23,7 +23,7 @@ Namespace XpoODataExample
         End Sub
         <Action> _
         Public Function CanRemove(ByVal product As Products) As Boolean
-            Return Not(New XPQuery(Of Suppliers)(product.Session)).Any(Function(s) s.Products.Contains(product))
+            Return Not (New XPQuery(Of Suppliers)(product.Session)).Any(Function(s) s.Products.Contains(product))
         End Function
     End Class
 
@@ -72,9 +72,19 @@ Namespace XpoODataExample
         <QueryInterceptor("Categories")> _
         Public Function OnQueryActors() As Expression(Of Func(Of Categories, Boolean))
             If context.CategoriesFiltering Then
-                Return Function(o) o.CategoryName.Length > 12
+                Return o
+                If True Then
+                    Get
+                        Return o.CategoryName.Length > 12
+                    End Get
+                End If
             Else
-                Return Function(o) True
+                Return o
+                If True Then
+                    Get
+                        Return True
+                    End Get
+                End If
             End If
         End Function
 
