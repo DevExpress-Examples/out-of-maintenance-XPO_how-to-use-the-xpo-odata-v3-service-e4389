@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[XpoOdataService.svc.cs](./CS/ODataService/XpoOdataService.svc.cs) (VB: [XpoOdataService.svc.vb](./VB/ODataService/XpoOdataService.svc.vb))**
+* [ClientForm.cs](./CS/ODataV3Example/ClientForm.cs) (VB: [ClientForm.vb](./VB/ODataV3Example/ClientForm.vb))
+* [Reference.cs](./CS/ODataV3Example/Service References/Northwind/Reference.cs) (VB: [Reference.vb](./VB/ODataV3Example/Service References/Northwind/Reference.vb))
+<!-- default file list end -->
 # How to: Use the XPO OData V3 Service
 
 
