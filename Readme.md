@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [XpoOdataService.svc.cs](./CS/ODataService/XpoOdataService.svc.cs) (VB: [XpoOdataService.svc.vb](./VB/ODataService/XpoOdataService.svc.vb))
+* [ClientForm.cs](./CS/ODataV3Example/ClientForm.cs) (VB: [ClientForm.vb](./VB/ODataV3Example/ClientForm.vb))
+<!-- default file list end -->
 # How to: Use the XPO OData V3 Service
 
 To start the service, run the **ODataService** project. To start the client application, run the **ODataV3Example** project.  
