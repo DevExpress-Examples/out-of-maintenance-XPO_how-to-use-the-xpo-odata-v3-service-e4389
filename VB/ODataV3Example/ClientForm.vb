@@ -109,7 +109,7 @@ Namespace ODataV3Example.Northwind
 				pictureBox.Image = Nothing
 			Else
 				Dim categoryID As Integer = CInt(Fix(value))
-				Dim resp As DataServiceStreamResponse = context.GetReadStream(context.Categories.Where(Function(i) i.CategoryID Is categoryID).Single(), "StreamPicture", New DataServiceRequestArgs())
+				Dim resp As DataServiceStreamResponse = context.GetReadStream(context.Categories.Where(Function(i) i.CategoryID = categoryID).Single(), "StreamPicture", New DataServiceRequestArgs())
 				pictureBox.Image = Image.FromStream(resp.Stream)
 			End If
 		End Sub
