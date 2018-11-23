@@ -98,7 +98,7 @@ Namespace ODataV3Example.Northwind
 
         Private Sub gvlODataV3Service_FocusedRowChanged(ByVal sender As Object, ByVal e As FocusedRowChangedEventArgs) Handles gvlODataV3Service.FocusedRowChanged
             pictureBox.Image = Nothing
-            If ListObjects Is Nothing OrElse Not (TypeOf ListObjects(0) Is Categories) Then
+            If ListObjects Is Nothing OrElse Not(TypeOf ListObjects(0) Is Categories) Then
                 Return
             End If
             Dim view As ColumnView = TryCast(gclODataV3ServiceMain.FocusedView, ColumnView)
@@ -252,7 +252,7 @@ Namespace ODataV3Example.Northwind
         End Sub
 
         Private Sub checkRemove_Click(ByVal sender As Object, ByVal e As EventArgs) Handles checkRemove.Click
-            If ListObjects Is Nothing OrElse Not (TypeOf ListObjects(0) Is Products) Then
+            If ListObjects Is Nothing OrElse Not(TypeOf ListObjects(0) Is Products) Then
                 Return
             End If
             Dim view As ColumnView = TryCast(gclODataV3ServiceMain.FocusedView, ColumnView)

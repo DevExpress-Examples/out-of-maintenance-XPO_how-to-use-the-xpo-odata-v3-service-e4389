@@ -155,51 +155,58 @@ Namespace ODataV3Example.Northwind
         ''' <summary>
         ''' There are no comments for Customers in the schema.
         ''' </summary>
+
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
-        Public Sub AddToCustomers(ByVal customers As Customers)
-            MyBase.AddObject("Customers", customers)
+        Public Sub AddToCustomers(ByVal customers_Renamed As Customers)
+            MyBase.AddObject("Customers", customers_Renamed)
         End Sub
         ''' <summary>
         ''' There are no comments for Products in the schema.
         ''' </summary>
+
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
-        Public Sub AddToProducts(ByVal products As Products)
-            MyBase.AddObject("Products", products)
+        Public Sub AddToProducts(ByVal products_Renamed As Products)
+            MyBase.AddObject("Products", products_Renamed)
         End Sub
         ''' <summary>
         ''' There are no comments for Categories in the schema.
         ''' </summary>
+
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
-        Public Sub AddToCategories(ByVal categories As Categories)
-            MyBase.AddObject("Categories", categories)
+        Public Sub AddToCategories(ByVal categories_Renamed As Categories)
+            MyBase.AddObject("Categories", categories_Renamed)
         End Sub
         ''' <summary>
         ''' There are no comments for Employees in the schema.
         ''' </summary>
+
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
-        Public Sub AddToEmployees(ByVal employees As Employees)
-            MyBase.AddObject("Employees", employees)
+        Public Sub AddToEmployees(ByVal employees_Renamed As Employees)
+            MyBase.AddObject("Employees", employees_Renamed)
         End Sub
         ''' <summary>
         ''' There are no comments for Shippers in the schema.
         ''' </summary>
+
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
-        Public Sub AddToShippers(ByVal shippers As Shippers)
-            MyBase.AddObject("Shippers", shippers)
+        Public Sub AddToShippers(ByVal shippers_Renamed As Shippers)
+            MyBase.AddObject("Shippers", shippers_Renamed)
         End Sub
         ''' <summary>
         ''' There are no comments for Orders in the schema.
         ''' </summary>
+
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
-        Public Sub AddToOrders(ByVal orders As Orders)
-            MyBase.AddObject("Orders", orders)
+        Public Sub AddToOrders(ByVal orders_Renamed As Orders)
+            MyBase.AddObject("Orders", orders_Renamed)
         End Sub
         ''' <summary>
         ''' There are no comments for Suppliers in the schema.
         ''' </summary>
+
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
-        Public Sub AddToSuppliers(ByVal suppliers As Suppliers)
-            MyBase.AddObject("Suppliers", suppliers)
+        Public Sub AddToSuppliers(ByVal suppliers_Renamed As Suppliers)
+            MyBase.AddObject("Suppliers", suppliers_Renamed)
         End Sub
     End Class
     ''' <summary>
@@ -218,9 +225,10 @@ Namespace ODataV3Example.Northwind
         ''' <param name="customerID">Initial value of CustomerID.</param>
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
         Public Shared Function CreateCustomers(ByVal customerID As String) As Customers
-            Dim customers As New Customers()
-            customers.CustomerID = customerID
-            Return customers
+
+            Dim customers_Renamed As New Customers()
+            customers_Renamed.CustomerID = customerID
+            Return customers_Renamed
         End Function
         ''' <summary>
         ''' There are no comments for Property Address in the schema.
@@ -476,9 +484,10 @@ Namespace ODataV3Example.Northwind
         ''' <param name="productID">Initial value of ProductID.</param>
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
         Public Shared Function CreateProducts(ByVal productID As Integer) As Products
-            Dim products As New Products()
-            products.ProductID = productID
-            Return products
+
+            Dim products_Renamed As New Products()
+            products_Renamed.ProductID = productID
+            Return products_Renamed
         End Function
         ''' <summary>
         ''' There are no comments for Property Discontinued in the schema.
@@ -744,10 +753,11 @@ Namespace ODataV3Example.Northwind
         ''' <param name="streamPicture">Initial value of StreamPicture.</param>
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
         Public Shared Function CreateCategories(ByVal categoryID As Integer, ByVal streamPicture As Global.System.Data.Services.Client.DataServiceStreamLink) As Categories
-            Dim categories As New Categories()
-            categories.CategoryID = categoryID
-            categories.StreamPicture = streamPicture
-            Return categories
+
+            Dim categories_Renamed As New Categories()
+            categories_Renamed.CategoryID = categoryID
+            categories_Renamed.StreamPicture = streamPicture
+            Return categories_Renamed
         End Function
         ''' <summary>
         ''' There are no comments for Property CategoryID in the schema.
@@ -857,10 +867,11 @@ Namespace ODataV3Example.Northwind
         ''' <param name="photo">Initial value of Photo.</param>
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
         Public Shared Function CreateEmployees(ByVal employeeID As Integer, ByVal photo As Global.System.Data.Services.Client.DataServiceStreamLink) As Employees
-            Dim employees As New Employees()
-            employees.EmployeeID = employeeID
-            employees.Photo = photo
-            Return employees
+
+            Dim employees_Renamed As New Employees()
+            employees_Renamed.EmployeeID = employeeID
+            employees_Renamed.Photo = photo
+            Return employees_Renamed
         End Function
         ''' <summary>
         ''' There are no comments for Property Address in the schema.
@@ -1242,9 +1253,10 @@ Namespace ODataV3Example.Northwind
         ''' <param name="shipperID">Initial value of ShipperID.</param>
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
         Public Shared Function CreateShippers(ByVal shipperID As Integer) As Shippers
-            Dim shippers As New Shippers()
-            shippers.ShipperID = shipperID
-            Return shippers
+
+            Dim shippers_Renamed As New Shippers()
+            shippers_Renamed.ShipperID = shipperID
+            Return shippers_Renamed
         End Function
         ''' <summary>
         ''' There are no comments for Property CompanyName in the schema.
@@ -1332,9 +1344,10 @@ Namespace ODataV3Example.Northwind
         ''' <param name="orderID">Initial value of OrderID.</param>
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
         Public Shared Function CreateOrders(ByVal orderID As Integer) As Orders
-            Dim orders As New Orders()
-            orders.OrderID = orderID
-            Return orders
+
+            Dim orders_Renamed As New Orders()
+            orders_Renamed.OrderID = orderID
+            Return orders_Renamed
         End Function
         ''' <summary>
         ''' There are no comments for Property Freight in the schema.
@@ -1635,9 +1648,10 @@ Namespace ODataV3Example.Northwind
         ''' <param name="supplierID">Initial value of SupplierID.</param>
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")> _
         Public Shared Function CreateSuppliers(ByVal supplierID As Integer) As Suppliers
-            Dim suppliers As New Suppliers()
-            suppliers.SupplierID = supplierID
-            Return suppliers
+
+            Dim suppliers_Renamed As New Suppliers()
+            suppliers_Renamed.SupplierID = supplierID
+            Return suppliers_Renamed
         End Function
         ''' <summary>
         ''' There are no comments for Property Address in the schema.

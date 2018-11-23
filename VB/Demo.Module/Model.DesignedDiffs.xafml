@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<Application>
+	<Views>
+		<ListView ID="Document_ListView" AllowEdit="True"/>
+		<ListView ID="Document_Articles_ListView" AllowEdit="True"/>
+	</Views>
+</Application>
+

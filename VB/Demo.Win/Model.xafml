@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<Application>
+	<Views>
+		<DetailView Id="Article_DetailView">
+			<Items>
+				<PropertyEditor Id="Body" PropertyEditorType="DevExpress.ExpressApp.HtmlPropertyEditor.Win.HtmlPropertyEditor" />
+			</Items>
+		</DetailView>
+	</Views>
+</Application>
