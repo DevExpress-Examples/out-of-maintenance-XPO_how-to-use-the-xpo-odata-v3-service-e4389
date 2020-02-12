@@ -8,15 +8,17 @@
 
 To start the service, run the **ODataService** project. To start the client application, run the **ODataV3Example** project.  
 
-**See Also:**  
-[How to implement OData4 service with XPO](https://github.com/DevExpress-Examples/how-to-implement-odata4-service-with-xpo)
-[How to implement CRUD operations using XtraGrid and OData](https://github.com/DevExpress-Examples/how-to-implement-crud-operations-using-xtragrid-and-odata-e4070)  
-[How to implement CRUD operations using XtraGrid and WCF Server Mode](https://github.com/DevExpress-Examples/how-to-implement-crud-operations-using-xtragrid-and-wcf-server-mode-e4365)  
-[GridControl - How to use the WcfServerModeSource component as a data source](https://www.devexpress.com/Support/Center/p/K18557)  
-[How to process authenticated requests on the OData service](https://github.com/DevExpress-Examples/how-to-process-authenticated-requests-on-the-odata-service-e4403)  
-[How to send authenticated requests to the OData service](https://github.com/DevExpress-Examples/how-to-send-authenticated-requests-to-the-odata-service-e4460)  
+## See Also
+- [How to Implement OData v4 Service with XPO (.NET Core 3.1)](https://github.com/DevExpress-Examples/XPO_how-to-implement-odata4-service-with-xpo-netcore)
+- [How to Implement OData v4 Service with XPO (.NET Framework)](https://github.com/DevExpress-Examples/XPO_how-to-implement-odata4-service-with-xpo)
+- [DevExtreme + OData v4 Service with XPO + XAF's User Authentication and Group Authorization API (Powered by XPO)](https://www.devexpress.com/go/XAF_Security_NonXAF_Series_2.aspx)
+- [How to implement CRUD operations using XtraGrid and OData](https://github.com/DevExpress-Examples/how-to-implement-crud-operations-using-xtragrid-and-odata-e4070)  
+- [How to implement CRUD operations using XtraGrid and WCF Server Mode](https://github.com/DevExpress-Examples/how-to-implement-crud-operations-using-xtragrid-and-wcf-server-mode-e4365)  
+- [GridControl - How to use the WcfServerModeSource component as a data source](https://www.devexpress.com/Support/Center/p/K18557)  
+- [How to process authenticated requests on the OData service](https://github.com/DevExpress-Examples/how-to-process-authenticated-requests-on-the-odata-service-e4403)  
+- [How to send authenticated requests to the OData service](https://github.com/DevExpress-Examples/how-to-send-authenticated-requests-to-the-odata-service-e4460)  
 
-**IMPORTANT NOTES**  
+## Important Notes
 1. An OData service created using the [OData Service Wizard](https://documentation.devexpress.com/CoreLibraries/CustomDocument14812.aspx) is a **standard** [WCF Data Service 5+](https://msdn.microsoft.com/library/hh487257(v=vs.103).aspx) for OData v3\. We don't provide documentation on how to consume this service because this task has no XPO-related specifics. Use standard solutions recommended for [OData](http://www.odata.org/) services in public community resources like MSDN and StackOverFlow. For instance, you may find these resources helpful:  
 &nbsp;&nbsp;&nbsp;&nbsp;[WCF Data Services Client Library](https://msdn.microsoft.com/en-us/library/cc668772.aspx)  
 &nbsp;&nbsp;&nbsp;&nbsp;[Updating the Data Service (WCF Data Services)](https://docs.microsoft.com/en-us/dotnet/framework/data/wcf/updating-the-data-service-wcf-data-services) and [How to: Add, Modify, and Delete Entities (WCF Data Services)](https://msdn.microsoft.com/en-us/library/dd756368(v=vs.110).aspx)   
