@@ -39,8 +39,9 @@ To start the service, run the **ODataService** project. To start the client appl
    If you need to include additional information in annotations, wrap this delegate with your own extended delegate.  
 7. Properties of the System.Drawing.Image and byte[] types are mapped to the _DataServiceStreamLink_ type in a service reference (Edm.Stream). To get data from this DataServiceStreamLink, use the DataServiceContext.GetReadStream method. Then load an image from the returned Stream. Here is an example from the article's ClientForm.cs file:
    ```csharp
-       DataServiceStreamResponse resp = context.GetReadStream(context.Categories.Where(i => i.CategoryID == categoryID).Single(), "StreamPicture", new DataServiceRequestArgs());
-       pictureBox.Image = Image.FromStream(resp.Stream);
+   Category category = context.Categories.Where(i => i.CategoryID == categoryID).Single();
+   DataServiceStreamResponse resp = context.GetReadStream(category, "StreamPicture", new DataServiceRequestArgs());
+   pictureBox.Image = Image.FromStream(resp.Stream);
    ```
 To use byte arrays instead of DataServiceStreamLink in your service, override the _XpoContext.ShowLargePropertyAsNamedStream_ method and returning False in it. Refer to the [Working with Binary Data (WCF Data Services)](https://docs.microsoft.com/en-us/dotnet/framework/data/wcf/working-with-binary-data-wcf-data-services) article for more details.
 
