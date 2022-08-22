@@ -9,7 +9,12 @@
 * [XpoOdataService.svc.cs](./CS/ODataService/XpoOdataService.svc.cs) (VB: [XpoOdataService.svc.vb](./VB/ODataService/XpoOdataService.svc.vb))
 * [ClientForm.cs](./CS/ODataV3Example/ClientForm.cs) (VB: [ClientForm.vb](./VB/ODataV3Example/ClientForm.vb))
 <!-- default file list end -->
-# How to: Use the XPO OData v3 Service
+# OBSOLETE - How to: Use the XPO OData v3 Service
+
+>**NOTE**: Starting with v22.1.4, you can no longer select the *DevExpress ORM OData v3 Service* project template in Visual Studio. This project template itself and WCF Data Services 5.0 (OData v3) are outdated. OData v4 is the most recent standard that provides much more features than OData v3 ([learn more](https://www.odata.org/blog/odata-v4-0-approved-as-a-new-oasis-standard/)).
+Use the **[Web API Service](https://docs.devexpress.com/eXpressAppFramework/403394/backend-web-api-service)** with integrated authorization & CRUD operations based on [ASP.NET Core OData 8.0](https://github.com/OData/AspNetCoreOData) (OData v4) powered by EF Core and XPO ORM library instead. For more information, see [XPO - The DevExpress ORM OData v3 Service project template has been removed from the Template Gallery](https://supportcenter.devexpress.com/internal/ticket/details/T1097832).
+
+----------------
 
 To start the service, run the **ODataService** project. To start the client application, run the **ODataV3Example** project.  
 
