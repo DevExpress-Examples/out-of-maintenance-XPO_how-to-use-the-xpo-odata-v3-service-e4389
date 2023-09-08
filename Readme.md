@@ -25,8 +25,6 @@ To start the service, run the **ODataService** project. To start the client appl
 - [How to implement CRUD operations using XtraGrid and OData](https://github.com/DevExpress-Examples/how-to-implement-crud-operations-using-xtragrid-and-odata-e4070)  
 - [How to implement CRUD operations using XtraGrid and WCF Server Mode](https://github.com/DevExpress-Examples/how-to-implement-crud-operations-using-xtragrid-and-wcf-server-mode-e4365)  
 - [GridControl - How to use the WcfServerModeSource component as a data source](https://www.devexpress.com/Support/Center/p/K18557)  
-- [How to process authenticated requests on the OData service](https://github.com/DevExpress-Examples/how-to-process-authenticated-requests-on-the-odata-service-e4403)  
-- [How to send authenticated requests to the OData service](https://github.com/DevExpress-Examples/how-to-send-authenticated-requests-to-the-odata-service-e4460)  
 
 ## Important Notes
 1. Composite keys are not currently supported by XpoDataServiceV3 and it is unlikely that they will be supported in the near future. You may receive the "_The entity type 'XXX' does not have any key properties. Please make sure that one or more key properties are defined for this entity type._" error with XpoDataServiceV3 if you map your persistent class to a table or view with a multi-column key. Since the XAF Mobile UI uses XPO OData Service, this will not work there as well.  In general, we do not recommend using composite keys as they impose many limitations on the default functionality. Refer to the [How to create a persistent object for a database table with a compound key](https://www.devexpress.com/Support/Center/p/A2615) article for more details.  
